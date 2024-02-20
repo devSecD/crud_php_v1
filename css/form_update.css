@@ -1,0 +1,23 @@
+.container_form_udp{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 18px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.input{
+    width: 60%;
+    padding: 15px;
+}
+
+.btn_update{
+    width: 25%;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    cursor: pointer;
+}

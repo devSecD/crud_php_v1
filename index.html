@@ -7,7 +7,11 @@
     <title>Vista principal</title>
 </head>
 <body>
-    <div class="button_action_create"><div></div><div></div><button class="button_create" type="button">Agregar</button></div>
+    <div class="button_action_create">
+        <div></div>
+        <div></div>
+        <button class="button_create" type="button">Agregar</button>
+    </div>
     <table>
         <tr>
             <th>Nombre</th>
@@ -19,14 +23,32 @@
             <td>Daniel</td>
             <td>Gonzalez</td>
             <td>Colonia 1</td>
-            <td><div class="buttons_action"><button class="button_edit" type="button">Actualizar</button><button class="button_delete" type="button">Borrar</button></div></td>
+            <td>
+                <div class="buttons_action">
+                    <button class="button_edit" data-id="update_321" onclick="location.href ='form_update.php?id=123'">Actualizar</button>
+                    <button class="button_delete open-dialog" data-id="958030" onclick="open_dialog_delete(this);">Borrar</button>
+                </div>
+            </td>
         </tr>
         <tr>
             <td>Mario</td>
             <td>Garcia</td>
             <td>Colonia 2</td>
-            <td><div class="buttons_action"><button class="button_edit" type="button">Actualizar</button><button class="button_delete" type="button">Borrar</button></div></td>
+            <td>
+                <div class="buttons_action">
+                    <button class="button_edit" data-id="update_123" onclick="location.href ='form_update.php?id=321'">Actualizar</button>
+                    <button class="button_delete open-dialog" data-id="45545" onclick="open_dialog_delete(this);">Borrar</button>
+                </div>
+            </td>
         </tr>
     </table>
+
+    <dialog class="alert-delete">
+        <div>¿Desea eliminarlo?</div>
+        <button class="close">Cancelar</button>
+        <button class="ok">Ok</button>
+    </dialog>
+      
+    <script src="javascript/index.js"></script>
 </body>
 </html>

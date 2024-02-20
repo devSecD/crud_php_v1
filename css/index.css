@@ -58,11 +58,23 @@ td {
     cursor: pointer;
 }
 
-.button_delete{
+.button_delete, .close, .ok{
     border: none;
     padding: 10px;
     color: #fff;
     background-color: #c82333;
     border-color: #bd2130;
     cursor: pointer;
+}
+
+.ok{
+    background-color: #0069d9;
+    border-color: #0062cc;
+    float: right;
+}
+
+.alert-delete{
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
 }
