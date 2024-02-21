@@ -1,4 +1,4 @@
-.container_form_udp{
+.container_form_udp, .container_form_register{
     margin-top: 80px;
     display: grid;
     grid-template-columns: 100%;
@@ -12,7 +12,7 @@
     padding: 15px;
 }
 
-.btn_update{
+.btn_update, .btn_register{
     width: 25%;
     padding: 10px;
     border: none;

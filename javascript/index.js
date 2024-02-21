@@ -29,3 +29,18 @@ okButton.addEventListener("click", ()=>{
         });
     }
 });
+
+// get all people
+var formData = new FormData();
+formData.append("data", "people");
+fetch("middlewares/process_get_people.php", {
+    method: "POST",
+    body: formData,
+})
+.then((response) => response.json())
+.catch((error) => {
+    console.error("Error:", error);
+})
+.then((response) => {
+    console.log("Success:", response);
+});
