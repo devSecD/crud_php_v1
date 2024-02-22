@@ -43,4 +43,17 @@ fetch("middlewares/process_get_people.php", {
 })
 .then((response) => {
     console.log("Success:", response);
+    console.log(response.length);
+    if(response.length > 0){
+        const tableContainer = document.getElementById('table-container');  
+        tableContainer.innerHTML = generateTable(response);  
+    }
 });
+
+function generateTable(data) {  
+    let table = '<tr><th>Nombre</th><th>Apellidos</th><th>Domicilio</th><th>Acciones</th></tr>';  
+    data.forEach(item => {  
+        table += `<tr><td>${item.name}</td><td>${item.lastname}</td><td>${item.domicile}</td><td><div class="buttons_action"><button class="button_edit" data-id="${item.id}" onclick="location.href ='form_update.php?id=${item.id}'">Actualizar</button><button class="button_delete open-dialog" data-id="${item.id}" onclick="open_dialog_delete(this);">Borrar</button></div></td></tr>`;
+    });  
+    return table;  
+}

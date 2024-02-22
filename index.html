@@ -12,25 +12,7 @@
         <div></div>
         <button class="button_create" onclick="location.href ='form_register.php'" type="button">Agregar</button>
     </div>
-    <table>
-        <tr>
-            <th>Nombre</th>
-            <th>Apellidos</th>
-            <th>Domicilio</th>
-            <th>Acciones</th>
-        </tr>
-        <tr>
-            <td>Daniel</td>
-            <td>Gonzalez</td>
-            <td>Colonia 1</td>
-            <td>
-                <div class="buttons_action">
-                    <button class="button_edit" data-id="update_321" onclick="location.href ='form_update.php?id=123'">Actualizar</button>
-                    <button class="button_delete open-dialog" data-id="958030" onclick="open_dialog_delete(this);">Borrar</button>
-                </div>
-            </td>
-        </tr>
-    </table>
+    <table class="card card-5" id="table-container"></table>
 
     <dialog class="alert-delete">
         <div>¿Desea eliminarlo?</div>
