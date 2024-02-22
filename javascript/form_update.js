@@ -14,6 +14,6 @@ function send_data_udp(element_current){
         console.error("Error:", error)
     })
     .then((response) => {
-        console.log("Success:", response)
+        if(response == "ok") location.href = 'index.html';
     });
 }

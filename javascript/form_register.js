@@ -13,6 +13,6 @@ function send_data_register(element_current){
         console.error("Error:", error)
     })
     .then((response) => {
-        console.log("Success:", response)
+        if(response == "ok") location.href = 'index.html';
     });
 }

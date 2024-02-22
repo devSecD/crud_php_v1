@@ -3,8 +3,6 @@
 include_once("connections/conneciton.php");
 include_once("core/get_person_by_id.php");
 $data_person = get_people_by_id($mysqli, $_GET["id"]);
-// print_r($data_person);
-// Array ( [id] => 1 [name] => a [lastname] => a [domicile] => a )
 ?>
 <!DOCTYPE html>
 <html lang="en">
