@@ -5,11 +5,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $name_database = "crud_php_v1";
-$user = "example_user";
-$pwd = "paSswor.-d23";
-
-
-
+$user = "root";
+$pwd = "";
 
 try {
     $mysqli = new PDO('mysql:host=localhost;dbname='.$name_database, $user, $pwd);
